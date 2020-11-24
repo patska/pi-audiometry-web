@@ -17,7 +17,6 @@ healthCareProfessionalRouter.get('/', async (request,response) => {
 
 healthCareProfessionalRouter.post('/', async (request,response) => {
     
-    console.log(request.body);
     const { name, userName , password } = request.body;
 
     const createHealthcareProfessional = new CreateNewHealthcareProfessionalService();

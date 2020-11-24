@@ -17,7 +17,6 @@ class DeleteHealthcareProfessional {
         });
 
         if(!user) throw new AppError('User doesn´t exists');
-        console.log(user);
         await healthcareProfessionalRepository.remove(user);
         const users = await healthcareProfessionalRepository.find();
 
