@@ -10,6 +10,9 @@ class HealthcareProfessioanl {
     name: string; 
 
     @Column()
+    email: string; 
+
+    @Column()
     userName: string; 
 
     @Column()
